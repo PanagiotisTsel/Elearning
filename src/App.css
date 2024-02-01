@@ -1,0 +1,575 @@
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  }
+
+.App {
+  text-align: center;
+  margin:auto;
+  font-family: ‘Josefin Sans’, sans-serif;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+  .App-logo {
+margin:auto;
+ position: auto;
+ width: 150px;
+ height: 100px;
+  }
+
+
+.App-header {
+  background-color: #ffffff;
+  display: top;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*Footer*/
+footer{
+  background-color: #61dafb;
+}
+
+/* Nav Bar */
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Added to wrap items to new lines on small screens */
+  justify-content: space-between;
+  align-items: center; /* Added to center items vertically */
+  padding-top: 1rem; /* Changed to use rem for better scalability */
+  padding-bottom: 1rem; /* Changed to use rem for better scalability */
+  background-color: #272525;
+  font-size: 1rem; /* Changed to use rem for better scalability */
+}
+
+.logo {
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 1.25rem; /* Changed to use rem for better scalability */
+  font-weight: bold;
+}
+
+.logo_header {
+  display: flex;
+  align-items: center; /* Added to center items vertically */
+  margin-left: 2%;
+}
+
+.main_nav {
+  display: flex;
+  flex-wrap: wrap; /* Added to wrap items to new lines on small screens */
+  width: 100%; /* Changed to use 100% width on small screens */
+  margin-top: 1rem; /* Changed to use rem for better scalability */
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0; /* Removed default padding from list */
+}
+
+.main_nav li:hover {
+  background-color: gray;
+}
+
+.main_nav li {
+  display: block; /* Changed to display block on small screens */
+  margin-top: 0.5rem; /* Changed to use rem for better scalability */
+  color: #ffffff;
+}
+
+.main_nav li a {
+  display: block; /* Changed to display block on small screens */
+  padding: 0.5rem; /* Changed to use rem for better scalability */
+  color: #ffffff;
+  text-align: center; /* Added to center text on small screens */
+}
+
+/*Login/Register*/
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+  width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/*Dropdown menu*/
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f0f0f;
+  min-width: 150px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: auto;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+/* heading */
+h3 {
+  text-align: center;
+}
+
+/*Slideshow*/
+.slideshow-container {
+  position: relative;
+  max-width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.slideshow-image {
+  display: block;
+  width: auto;
+  height: 400px;
+  transition-duration: 1s; /* 1 second duration */
+}
+
+.slideshow-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.slideshow-buttons button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%; /* add this property to make the button circular */
+}
+
+.slideshow-button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5%;
+  display: block;
+}
+
+.slideshow-buttons button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.slideshow-prev-button {
+  margin-left: 0;
+  left: 0;
+  display: block;
+
+}
+
+.slideshow-next-button {
+  margin-right: 0;
+  right: 0;
+  display: block;
+
+}
+
+/*Contuct us page*/
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 2px #ddd;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #0074d9;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #0053a1;
+  outline: none;
+}
+
+/*Quiz */
+.question-card {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 80%; /* Can be in percentage also. */
+  height: auto;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+ul {
+  list-style: none;
+}
+
+.quiz {
+  margin-top: 8px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+/* Final Results  */
+
+.final-results {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 50%; /* Can be in percentage also. */
+  height: auto;
+  margin-top: 64px;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+button {
+  background-color: rgb(255, 255, 255); /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 24px;
+}
+button:hover {
+  background-color: rgb(126, 139, 210);
+}
+
+/*img*/
+img {
+  width: 45%;
+  height: auto;
+}
+
+
+
+.grid-item {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888888;
+  margin-bottom: 20px;
+}
+
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-element {
+  margin: 0;
+}
+
+.loading-screen__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-screen__bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ccc;
+}
+
+body {
+  margin: 0 !important;
+}
+
+table {
+  width: 100%;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  table {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  table {
+    width: 100%;
+  }
+}
+/* Adjust layout for small screens */
+@media screen and (max-width: 480px) {
+  .user-details {
+    font-size: 0.8em;
+  }
+  .edit-button {
+    position: relative;
+    margin-top: 1em;
+  }
+}
+.container {
+  position: relative;
+  height: 100%;
+}
+
+table {
+  max-height: 400px; /* or any value you prefer */
+  overflow-y: auto;
+}
+
+
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: rgb(35, 59, 196);
+  color: white;
+}
+
+
+.grid-item img {
+  width: 100%;
+  max-width: 400px; /* set a maximum width to prevent images from getting too large */
+  height: auto; /* set height to auto to maintain aspect ratio */
+  margin: 10px 0; /* add some margin to separate each grid item */
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+tbody td {
+  max-width: 200px; /* set a max-width for the table cells */
+  white-space: nowrap; /* prevent line breaks */
+  overflow: hidden; /* hide overflowing content */
+  text-overflow: ellipsis; /* show ellipsis for overflowing content */
+  margin: 0;
+}
+.main {
+  text-align: center;
+}
+
+#slideshow-container {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.slideshow-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slideshow-button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  padding: 1em;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+/*This is to make the grid containers vertical.*/
+.grid-container-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
